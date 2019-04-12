@@ -81,3 +81,9 @@
   String dateSlug ="${today.year.toString()}-${today.month.toString().padLeft(2,'0')}-${today.day.toString().padLeft(2,'0')}";
   print('dateSlug${dateSlug}');
 ```
+
+```dart
+ /** 清除定时器*/
+ var timer = new Timer(new Duration(seconds: 1), () => print('done'));
+ timer.cancel();
+```
