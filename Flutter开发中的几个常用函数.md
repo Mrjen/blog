@@ -87,3 +87,33 @@
  var timer = new Timer(new Duration(seconds: 1), () => print('done'));
  timer.cancel();
 ```
+
+```dart
+ /** 时间差倒计时*/
+checkTime(int i) {
+    return i < 10 ? '0${i.toString()}' : i;
+  }
+
+  showTime() {
+    int now = new DateTime.now().millisecondsSinceEpoch; // 当前时间戳
+    int endtime = 1555387932; // 结束时间
+    int diff = (endtime - (now / 1000)).toInt();
+    var timer;
+    if(diff < 0 || diff == 0) {
+      print('倒计时已结束'); 
+      try{  
+        timer.cancel(); 
+      }catch(e){}
+    } else {
+      int day = (diff~/60~/60~/24);     
+      int hour = (diff~/60~/60%24).toInt();
+      int minute = (diff~/60%60).toInt();
+      int second = (diff%60).toInt();
+      String leftTime = '${day}天${checkTime(hour)}时${checkTime(minute)}分${checkTime(second)}秒';
+      print('还剩${leftTime}');
+      timer = new Future.delayed(const Duration(seconds: 1), (){
+        showTime();
+      });
+    }
+  }
+```
