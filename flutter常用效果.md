@@ -1,8 +1,9 @@
+```dart
 double appBarAlpha = 0;
 double MAX_SCROLL_HEIGHT = 100;
 
 
-```dart
+
 /**页面滚动顶部导航栏渐变消失*/
 _scrollEvent(offset) {
   double alpha = offset / MAX_SCROLL_HEIGHT; // 最大滚动高度
