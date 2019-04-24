@@ -117,3 +117,8 @@ checkTime(int i) {
     }
   }
 ```
+
+```dart
+/** 关闭键盘 */
+FocusScope.of(context).requestFocus(new FocusNode());
+```
