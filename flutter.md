@@ -140,3 +140,14 @@ return Scaffold(
     );
 ```
 
+```dart
+  /**flutter 修复*/  flutter根目录运行一下命令
+  
+  git clean -xfd
+  git stash save --keep-index
+  git stash drop
+  git pull
+  flutter doctor
+```
+
+
