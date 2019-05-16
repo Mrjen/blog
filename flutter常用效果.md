@@ -71,3 +71,9 @@ return Scaffold(
       ),
     );
 ```
+
+
+```dart
+ // 滑动关闭
+ Dismissable
+```
