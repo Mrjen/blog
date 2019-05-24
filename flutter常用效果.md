@@ -76,4 +76,7 @@ return Scaffold(
 ```dart
  // 滑动关闭
  Dismissable
+ 
+ 键盘高度
+ MediaQuery.of(context).viewInsets.bottom
 ```
