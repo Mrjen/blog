@@ -80,3 +80,7 @@ return Scaffold(
  键盘高度
  MediaQuery.of(context).viewInsets.bottom
 ```
+```dart
+ // 屏幕宽度的widget
+ fractionallsizebox
+```
