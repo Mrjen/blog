@@ -82,5 +82,5 @@ return Scaffold(
 ```
 ```dart
  // 屏幕宽度的widget
- fractionallsizebox
+ FractionallySizeBox
 ```
