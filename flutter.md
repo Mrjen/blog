@@ -150,4 +150,9 @@ return Scaffold(
   flutter doctor
 ```
 
+```dart
+ // 状态栏加导航栏的高度
+ kToolbarHeight
+```
+
 
