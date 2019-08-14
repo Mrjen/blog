@@ -1,6 +1,6 @@
 ```dart
   // 轮播左对齐效果
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class MySwiper extends StatefulWidget {
   @override
@@ -69,7 +69,7 @@ class _MySwiperState extends State<MySwiper> {
     
     final double blur = active ? 30 : 0;
     final double offset = active ? 20 : 0;
-    final double top = active ? 50 : 0;
+    final double top = active ? 100 : 200;
 
     return AnimatedContainer(
       duration: Duration(milliseconds: 500),
